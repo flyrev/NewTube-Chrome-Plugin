@@ -12,8 +12,27 @@ storage.get('array', function(r) {
 			document.getElementById("seen_checkbox").checked = true;
 		}
 
-			console.log("Fetched data");
-			console.log(array);
+		console.log("Fetched data");
+		console.log(array);
+		
+		var links = document.links;
+		for (var i = 0; i<array.length; i++) {
+			// var lookup = 'a[href^="/watch?v=' + array[i] + '"]'; // ^ is "starts with"
+			// $(lookup).innerHTML = "BOGUS" + $(lookup).innerHTML;
+			
+			var full_url = 'http://www.youtube.com/watch?v=' + array[i];
+			var view = 'v=' + array[i];
+			
+			
+			for (var j=0; j<links.length; j++) {
+				if (links[j].href.indexOf(view) != -1) {
+					//console.log(links[j].href + " removed!");
+					links[j].innerHTML="";
+				}
+				
+			}
+		}
+		
 });
 
 function toggle_change(){
