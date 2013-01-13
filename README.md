@@ -7,3 +7,5 @@ You'll be all set! Now there will be a neat checkbox under every YouTube video. 
 Be sure to edit newtube.js if you don't want the data synced with your Google account.
 
 ![Screenshot](https://pbs.twimg.com/media/BAf5ep6CMAAEzj4.png:large)
+
+The plugin is also on the [Google Web Store](https://chrome.google.com/webstore/detail/newtube/maehdlnkmoidgohnmlljgalnehcjlcih).
