@@ -1,4 +1,8 @@
-﻿const storage = chrome.storage.local;
+﻿// Change this to chrome.storage.local if you don't want your stuff to be synced.
+const storage = chrome.storage.sync;
+
+
+
 function null_function() { }
 var v_id = $('input[name="video_id"]').val();
 
