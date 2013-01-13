@@ -16,6 +16,7 @@ storage.get('array', function(r) {
 		console.log(array);
 		
 		var links = document.links;
+		var removed=0;
 		for (var i = 0; i<array.length; i++) {
 			// var lookup = 'a[href^="/watch?v=' + array[i] + '"]'; // ^ is "starts with"
 			// $(lookup).innerHTML = "BOGUS" + $(lookup).innerHTML;
@@ -28,11 +29,12 @@ storage.get('array', function(r) {
 				if (links[j].href.indexOf(view) != -1) {
 					//console.log(links[j].href + " removed!");
 					links[j].innerHTML="";
+					removed++;
 				}
 				
 			}
 		}
-		
+		console.log(removed + " videos removed");
 });
 
 function toggle_change(){
