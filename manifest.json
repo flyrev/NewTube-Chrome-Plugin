@@ -1,9 +1,9 @@
-﻿{
-  "manifest_version": 2,
+{
+  "manifest_version": 5,
 
   "name": "NewTube",
   "description": "This plugin can help you manage which videos you've seen and not",
-  "version": "1.0",
+  "version": "1.2.1",
   
   "permissions": [
     "storage"
