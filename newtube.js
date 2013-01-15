@@ -10,7 +10,9 @@ var array = [];
 
 storage.get('array', function(r) {
 		array = r['array'];
-		
+		if (array == undefined)
+			array = [];
+			
 		var index = array.indexOf(v_id);
 		if (index != -1) {
 			document.getElementById("seen_checkbox").checked = true;
@@ -42,6 +44,9 @@ storage.get('array', function(r) {
 });
 
 function toggle_change(){
+	if (array == undefined)
+			array = [];
+		
 	var index = array.indexOf(v_id);
 
 	if(document.getElementById("seen_checkbox").checked) {
